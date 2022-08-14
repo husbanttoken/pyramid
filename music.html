@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pyramid Project Playlist</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="./mp3.js"></script>
+    <link rel="shortcut icon" href="imgs/favicon.ico">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FCZXSYGDQB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FCZXSYGDQB');
+    </script>
+</head>
+<body onload="init()">
+    <h1>Pyramid Music Playlist</h1>
+    <p class="abar">
+        • <a href="./index.html">Home</a> • 
+    </p>
+    <hr/>
+        <p id="tile-bar">Now Playing: <marquee id="now-playing" scrollamount="4"></marquee></p>
+        <audio id="audio" controls="controls" onerror="alert('Could not play MP3 audio file ' + this.src + '!');" onended="skip()">
+        HTML5 MP3 audio required (Chrome, Safari, IE 9?)
+        </audio>
+        <div id="content">
+        <ul>
+            <li>One Night In Neo Kobe City</li>
+            <li>Deus Ex - UNATCO remix</li>
+            <li>Metal Gear 2 - Solid Snake</li>
+            <li>PSO - Image of Hero</li>
+            <li>egypt-1992 - arekusanda</li>
+            <li>Golden Eye 007 Watch Theme</li>
+            <li>S&K - Flying Battery Zone Act 2</li>
+            <li>Tekken 3 - Ling Xiaoyu</li>
+            <li>Tekken 3 - Yoshimitsu</li>
+            <li>Sonic 2 - Chemical Plant Zone</li>
+            <li>SOTN - The Lost Portrait [1]</li>
+            <li>Streets of Rage 2 - Go Straight</li>
+            <li>Tekken 3 - Bryan Fury</li>
+            <li>Star Fox - Corneria</li>
+            <li>Tekken 3 - Julia Chang</li>
+            <li>Dan Terminus - Restless Destroyer</li>
+            <li>Front Mission 4 - Lock & Load</li>
+            <li>Gundam Wing - The Wings Of A Boy That Killed Adolescence</li>
+            <li>TMNT- Technodrome Lets Kick Shell (Fortress)</li>
+            <li>White Zombie - More Human Than Human</li>
+            <li>Policenauts - End of the Dark</li>
+            <li>Birdy Nam Nam -The Parachute Ending</li>
+            <li>FFVI - Dancing Mad</li>
+        </ul>
+    </div>
+</body>
+</html>

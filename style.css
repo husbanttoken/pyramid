@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Impasse";
+  src: url("imgs/impasse-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'impassebold';
+    src: url('imgs/impassebold-webfont.woff') format('woff');
+}
+
+body {
+  background-color: #131313;
+  background-image: url(imgs/egypt.gif);
+  /* background-image: url(/img/lines-alpha-anim.gif); */
+  /* background-size: 8px; */
+  /* background-size: cover; */
+  /* background-position: center center; */
+  background-size: 100% auto; 
+  background-repeat: no-repeat;
+  color: rgb(57, 219, 57);
+  font-family: 'Space Mono', monospace;
+  animation: fade-in 2s;
+  /* text-shadow: -0.06em 0 0.5px rgba(255, 200, 100, 0.9); */
+  max-width: 48em;
+  margin-left: auto;
+  margin-right: auto;
+  background-attachment: fixed;
+}
+*{
+  scroll-behavior: smooth !important;
+  }
+a:visited, a:link, a:active, .bsc {
+  color: rgb(219, 67, 181);
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+  text-shadow: 0.06em 0 0.5px rgba(200, 200, 0, 0.5);
+}
+
+a:hover {
+  color: rgb(57, 219, 57);
+  text-shadow: -0.06em 0 0.5px rgba(255, 200, 100, 0.9);
+}
+
+p.abar {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background:#131313d2;;
+  font-size: 1.5rem;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
+  display: block;
+}
+
+.images {
+  margin-left: auto ;
+  margin-right: auto ;
+  display: flex;
+  align-items: center;
+  animation-duration: 3s;
+  max-width: 90%;
+}
+
+.images {
+  padding: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.images img {
+  width: 100%;
+  /* box-shadow: 0.06rem 0.12rem 0 rgba(200, 100, 100, 0.5), 0 0.06rem 0 rgba(200, 100, 100, 0.5),
+    0 0 5px rgba(0, 0, 0, 0.4); */
+  transition: ease-in-out 0.2s;
+}
+
+/* .images img:hover {
+  filter: hue-rotate(90deg);
+  transform: translateY(-8pt);
+  box-shadow: 0.06rem 0.12rem 0 rgba(200, 100, 100, 0.5), 0 0.06rem 0 rgba(200, 100, 100, 0.5),
+    0 9pt 8px rgba(0, 0, 0, 0.28);
+} */
+
+h1 {
+  text-align: center;
+  color: rgb(57, 219, 57);
+  font-family:  "impassebold";  
+}
+
+.header-token-name {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.fade {
+  position: relative;
+  text-align: center;
+}
+
+.fade span {
+  position: absolute;
+  transform: translateX(-50%);
+  transition: ease-in-out .5s;
+}
+
+.fade span:nth-child(2) {
+  opacity: 0;
+}
+
+.fade span:nth-child(1) {
+  opacity: 1;
+}
+
+.fade:hover span:nth-child(2) {
+  opacity: 1;
+}
+
+.fade:hover span:nth-child(1) {
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; filter: blur(0.2px); }
+  to { opacity: 1; }
+}
+
+@media (max-aspect-ratio: 7/8) {
+  body {
+    background-image: url(imgs/neo-kobe-city.gif);
+    /* background-image: url(/img/lines-alpha-10.png); */
+    /* background-size: 6px; */
+  }
+  .images {
+    flex-direction: column;
+  }
+  .fade {
+      padding-bottom: 2em;
+  }
+}
+
+#content {
+  background-color: #131313d2;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-top: .5em;
+}
+p {
+  margin-left: 1em;
+  margin-right: 1em; 
+}
+
+h1.content {
+  margin-top: 1em;
+  margin-left: 0.5em;
+  text-align: left;
+  font-family: "Impasse", "Andale Mono", "Lucida Console", monospace;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.list {
+  font-size: 1.5rem;
+}
+
+#back {
+  font-size: large;
+}
+
+#back:before {
+  content: "<- ";
+}
+
+@media (max-aspect-ratio: 7/8) {
+  body {
+    max-width: 90%;
+  }
+}
+
+:root {
+  color-scheme: dark;
+}
+
+.bsc {
+  overflow-wrap: break-word;
+}
+
+.audioplayer {
+  height:12px;
+  width:300px;
+}
+
+* {
+  cursor: url(imgs/pyramid.cur), auto !important;
+  
+}
+#now-playing{
+  width: 80%;
+}
